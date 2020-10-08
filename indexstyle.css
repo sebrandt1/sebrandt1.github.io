@@ -40,3 +40,12 @@ li {
     color: black;
     background-color: orange;
 }
+.underscore {
+    color: orange;
+    animation: underscore 1s steps(2, start) infinite;
+}
+@keyframes underscore {
+    to {
+        visibility: hidden;
+    }
+}
