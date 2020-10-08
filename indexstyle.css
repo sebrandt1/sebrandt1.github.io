@@ -42,6 +42,7 @@ li {
 }
 .underscore {
     color: orange;
+    font-weight: bolder;
     animation: underscore 1s steps(2, start) infinite;
 }
 @keyframes underscore {
