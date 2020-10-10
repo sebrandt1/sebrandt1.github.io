@@ -3,50 +3,78 @@
     src: url("fonts/RuneScape\ Regular.ttf") format("truetype");
 }
 
-h1 {
-    font-family: "rs";
-    color: black;
-    background-color: orange;
-    position: fixed;
-    font-size: 30px;
-    left: 40% ;
-    margin: 0% auto;
+body, html {
+    min-height: 100%;
+    min-width: 99%;
 }
 
-.linkrefs {
-    color:orange;
-    font-family: "rs";
-    font-size: 25px;
-    text-align: left;
-    position: relative;
-    text-decoration: none;
-    font-weight: bold;
+body {
+    background-image: url('images/rainy-background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-ol {
-    list-style-position: outside;
-    width: 100%;
-    text-align: center;
-    list-style-type: none;
+
+.infopanel {
+    background-image: linear-gradient(to right, #D56F6F 10%, #5D9EC4 30%);
+    opacity: 20%;
+    height: 300px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 50px;
+    width: 250px;
+    top: 35%;
+    left: 50%;
     position: fixed;
-    margin-left: 25%;
-    margin-top: 5%;
-}
-li {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-.linkrefs:hover {
-    color: black;
-    background-color: orange;
-}
-.underscore {
-    color: orange;
+    transform: translate(-50%, -50%);
+    font-family: "rs";
     font-weight: bolder;
-    animation: underscore 1s steps(2, start) infinite;
+    font-size: 25px;
+    text-shadow: -1.25px -1.25px #D56F6F;
+    color: beige;
+    text-align: center;
+    border: 3px double #D56F6F;
+    box-sizing: border-box;
 }
-@keyframes underscore {
-    to {
-        visibility: hidden;
-    }
+
+.infobuttons {
+    top: 45%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+    user-select: none;
+    float: left;
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+    opacity: 60%;
+    margin: 3px;
+    color: black;
+    font-family: "rs";
+    text-shadow: -0.75px -0.75px #D56F6F;
+    background-color: #5D9EC4;
+    border: 2px ridge #D56F6F;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-decoration: none;
+    background-size: auto;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.buttons:hover {
+    background-color: #D56F6F;
+    font-size: 27px;
+    opacity: 100%;
 }
