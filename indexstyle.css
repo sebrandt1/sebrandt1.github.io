@@ -4,23 +4,6 @@
     src: url("fonts/RuneScape\ Regular.ttf") format("truetype");
 }
 
-.scanlines {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    opacity: 0%;
-    z-index: -1;
-    background-color: orange;
-    user-select: none;
-    animation: scanline 5s ease-in-out infinite alternate;
-}
-
-@keyframes scanline {
-    /* IMPLEMENT SCANLINES*/
-}
-
 body {
     background-color: black;
 }
