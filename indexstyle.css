@@ -1,80 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
 @font-face {
     font-family: "rs";
     src: url("fonts/RuneScape\ Regular.ttf") format("truetype");
 }
 
-body, html {
-    min-height: 100%;
-    min-width: 99%;
+.scanlines {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0%;
+    z-index: -1;
+    background-color: orange;
+    user-select: none;
+    animation: scanline 5s ease-in-out infinite alternate;
+}
+
+@keyframes scanline {
+    /* IMPLEMENT SCANLINES*/
 }
 
 body {
-    background-image: url('images/rainy-background.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: black;
 }
 
-.infopanel {
-    background-image: linear-gradient(to right, #D56F6F 10%, #5D9EC4 30%);
-    opacity: 20%;
-    height: 300px;
-    width: 600px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border: 3px solid black;
-    box-sizing: border-box;
-}
-
-.header {
-    height: 50px;
-    width: 250px;
-    top: 35%;
-    left: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    font-family: "rs";
+.title {
+    text-shadow: 0em 0em 0.5em #ff8533 ;
+    border: 1px solid #ff8533 ;
+    font-family: "VT323";
+    text-align: center;
+    font-size: 200%;
     font-weight: bolder;
-    font-size: 25px;
-    text-shadow: -1.25px -1.25px #D56F6F;
-    color: beige;
-    text-align: center;
-    border: 3px double #D56F6F;
-    box-sizing: border-box;
+    color: #ff8533 ;
+    box-shadow: 0 0 0.7em #ff8533;
 }
 
-.infobuttons {
-    top: 45%;
-    left: 50%;
-    position: fixed;
-    transform: translate(-50%, -50%);
+.wrapper {
+    font-size: 125%;
+    padding-left: 5%;
+    text-shadow: 0em 0em 0.5em #ff8533;
+    font-family: "VT323";
+    text-align: left;
+    font-weight: bolder;
+    color: #ff8533;
 }
 
-.buttons {
+.links {
+    width: 0%;
+    padding-left: 1em;
     user-select: none;
-    float: left;
-    list-style-type: none;
-    text-align: center;
-    font-size: 25px;
-    opacity: 60%;
-    margin: 3px;
-    color: black;
-    font-family: "rs";
-    text-shadow: -0.75px -0.75px #D56F6F;
-    background-color: #5D9EC4;
-    border: 2px ridge #D56F6F;
-    box-sizing: border-box;
-    font-weight: bold;
-    text-decoration: none;
-    background-size: auto;
-    text-transform: uppercase;
-    transition: 0.5s;
+    color: #ff5533 ;
+    text-shadow: 0em 0em 0.5em #ff5533;
+    transition: 0.2s;
 }
 
-.buttons:hover {
-    background-color: #D56F6F;
-    font-size: 27px;
-    opacity: 100%;
+.links:hover {
+    color: #ffcc33 ;
+}
+
+.underline {
+    width: 0%;
+    padding-left: 1em;
+    user-select: none;
+    color: #ff8533;
+    text-shadow: 0em 0em 0.5em #ff8533 ;
+    animation: blink 1s steps(2, start) infinite;;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
 }
