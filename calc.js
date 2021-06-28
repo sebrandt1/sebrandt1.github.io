@@ -5,7 +5,7 @@ function calculate() {
 
     var totalHours = hour + (minute / 60);
 
-    var result = Math.round(totalHours * money);
+    var result = Math.round(totalHours * money * 100) / 100;
 
     document.getElementById("result").innerText = "$" + result;
 }
