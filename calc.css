@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: white;
+    display: inline;
+}
+
+#calculationHour, #calculationMinute, #calculationDollars, #calc, #result {
+    width: 6%;
+    height: 5%;
+    display: inline;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+#calc, #result {
+    font-size: 18px;
+}
+
+#calculationDollars {
+    width: 11%;
+}
+
+#container {
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

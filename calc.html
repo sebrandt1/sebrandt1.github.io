@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>moneyz calc</title>
+        <script type="text/javascript" src="calc.js"></script>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+<body>
+    <div id="container">
+        <input type="number" id="calculationHour" min="0" max="23" required placeholder="23" oninput="calculate()">
+        <input type="number" id="calculationMinute" min="0" max="59" required placeholder="59" oninput="calculate()">
+        <p id="calc"> * </p>
+        <input type="number" id="calculationDollars" min="0" placeholder="$27" oninput="calculate()">
+        <p id="calc"> = </p>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
